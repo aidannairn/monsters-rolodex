@@ -7,19 +7,28 @@ class App extends Component {
     super()
 
     this.state = {
-      string: 'Hello World!'
+      monsters: [
+        {
+          id: '000',
+          name: 'Frankenstein'
+        },
+        {
+          id: '001',
+          name: 'Dracula'
+        },
+        {
+          id: '002',
+          name: 'Zombie'
+        }
+      ]
     }
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.state.string}</p>
-          <button onClick={() => this.setState({ string: 'Hello Aidan' })}>
-            Change Text
-          </button>
-        </header>
+        {this.state.monsters.map(monster => (
+          <h1 key={monster.id}> {monster.name} </h1>
+        ))}
       </div>
     )
   }
