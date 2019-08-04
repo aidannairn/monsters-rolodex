@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://aidannairn.github.io/monsters-rolodex",
   "dependencies": {
-    "gh-pages": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
